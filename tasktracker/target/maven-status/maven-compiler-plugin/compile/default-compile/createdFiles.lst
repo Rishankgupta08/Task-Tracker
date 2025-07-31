@@ -1,0 +1,5 @@
+com\typeverse\tasktracker\model\Task.class
+com\typeverse\tasktracker\TasktrackerApplication.class
+com\typeverse\tasktracker\controller\TaskController.class
+com\typeverse\tasktracker\config\FirebaseConfig.class
+com\typeverse\tasktracker\repository\TaskRepository.class

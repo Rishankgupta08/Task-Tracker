@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase setup -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+    import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDwJKDn6putAfs58ZzX9DGd6EVNVC08nIU",
+      authDomain: "task-tracker-4930d.firebaseapp.com",
+      projectId: "task-tracker-4930d",
+      storageBucket: "task-tracker-4930d.firebasestorage.app",
+      messagingSenderId: "1086131710508",
+      appId: "1:1086131710508:web:5496e6c19c987b6bd1ff89",
+      measurementId: "G-GDB402VPVS"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+
+    // Export Firestore methods globally
+    window.db = db;
+    window.firebaseCollection = collection(db, "tasks");
+    window.addDoc = addDoc;
+    window.getDocs = getDocs;
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Tracker</h1>
+
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <input type="text" id="description" placeholder="Task Description (optional)" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
