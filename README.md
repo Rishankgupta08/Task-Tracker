@@ -1,6 +1,6 @@
 # 📝 Task Tracker
 
-A sleek and minimal **Task Tracker Web App** built using **HTML, CSS, JavaScript**, and **Firebase Firestore** as the backend. It allows users to add, manage, mark, and delete tasks in real-time with persistent storage.
+A modern and responsive Task Tracker web application that allows users to manage their daily tasks in real time. Built using Spring Boot for backend APIs, HTML/CSS/JavaScript for the frontend, and Firebase Firestore for real-time data storage. This project demonstrates full-stack development and integration between frontend, backend, and database.
 
 ---
 
@@ -18,12 +18,17 @@ A sleek and minimal **Task Tracker Web App** built using **HTML, CSS, JavaScript
 
 ## 🔧 Tech Stack
 
-| Technology         | Usage                         |
-|--------------------|-------------------------------|
-| HTML/CSS           | User Interface and Layout     |
-| JavaScript         | Application Logic             |
-| Firebase Firestore | Real-time Database            |
-| Firebase Hosting   | Deployment   (Optional)       |
+## Technology            ## Usage
+
+HTML/CSS             User Interface and Layout
+
+JavaScript           Application Logic (Frontend)
+
+Spring Boot          Backend REST API
+
+Firebase Firestore   Real-time Database
+
+Firebase Hosting     Deployment (Optional)
 
 ---
 
