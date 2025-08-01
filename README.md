@@ -18,18 +18,13 @@ A modern and responsive Task Tracker web application that allows users to manage
 
 ## 🔧 Tech Stack
 
-## Technology            ## Usage
-
-HTML/CSS             User Interface and Layout
-
-JavaScript           Application Logic (Frontend)
-
-Spring Boot          Backend REST API
-
-Firebase Firestore   Real-time Database
-
-Firebase Hosting     Deployment (Optional)
-
+| Technology         | Usage                         |
+|--------------------|-------------------------------|
+| HTML/CSS           | User Interface and Layout     |
+| JavaScript         | Application Logic             |
+| Spring Boot        | Backend REST APIs             |
+| Firebase Firestore | Real-time Database            |
+| Firebase Hosting   | Deployment   (Optional)       |
 ---
 
 ```text
@@ -87,8 +82,8 @@ This project uses Firebase Firestore for storing tasks. All configurations are l
 
 ## 💻 How to Run the Project
 🚀 Step 1: Clone and Run Spring Boot App
-git clone https://github.com/Rishankgupta08/Task-Tracker.git
-cd task-tracker
+git clone https://github.com/Rishankgupta08/Task-Tracker.git                                                                                                                               
+cd task-tracker                                                                                                                                                                            
 ./mvnw spring-boot:run  # or use your IDE to run MainApplication.java
 
 ## 🌐 Step 2: Open Frontend
